@@ -30,8 +30,8 @@
           <button @click="updateStatus(i)" class="btn btn-success" :class=" {updated: this.tasks[i].status} ">
             {{task.statusMessage }}
           </button>
-          <button @click="editTask(i)" class="btn btn-warning fa-solid fa-pen"></button>
-          <button @click="deleteTask(i)" class="btn btn-secondary fa-solid fa-trash"></button>
+          <button @click="editTask(i)" class="btn btn-warning"><span class="fa-solid fa-pen"></span></button>
+          <button @click="deleteTask(i)" class="btn btn-secondary"><span class="fa-solid fa-trash"></span></button>
         </div>
       </div>
     </div>
@@ -40,6 +40,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'TodoApp',
   data() {
@@ -82,8 +83,8 @@ export default {
   }
 }
 </script>
-
 <style scoped>
+
 @import '@/assets/style.css';
 
 .main-view {
