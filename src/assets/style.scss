@@ -1,0 +1,21 @@
+$primary: crimson;
+
+$utilities: () !default;
+$utilities: map-merge(
+  $utilities,
+  (
+    
+    "border-radius": (
+      property: border-radius,
+      class: br,
+      values: (
+        0:0,
+        1:1px,
+        2:5px,
+        3:10px
+      )
+    )
+  )
+);
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'
