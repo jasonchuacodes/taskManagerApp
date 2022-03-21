@@ -44,16 +44,7 @@ export default {
   name: 'TodoApp',
   data() {
     return {
-      tasks: [
-        // {message: 'eatk',
-        //  status: false,
-        //  statusMessage: 'Pending' 
-        // },
-        // {message: 'walk',
-        //  status: true,
-        //  statusMessage: 'Pending'
-        // }
-      ],
+      tasks: [],
       taskInput: "",
       isEditing: null,
       
